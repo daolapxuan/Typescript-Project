@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="author" content="DLX">
+
+	<!-- Viewport Meta Tag -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Latest compiled and minified Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- My css -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<!-- HTML5 for IE9 -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<!-- HTML part -->
+    <div class="container-fluid mt-4">
+        <h2>Thông Tin Nhân Viên:</h2>
+        <form> 
+            <div class="form-group">
+              <label for="employee-code">Mã Nhân Viên</label>
+              <input type="text" class="form-control" id="employee-code">
+            </div>
+            <div class="form-group">
+              <label for="employee-name">Họ tên</label>
+              <input type="text" class="form-control" id="employee-name">
+            </div>
+            <div class="form-group">
+                <label for="employee-salary">Lương Cơ Bản</label>
+                <input type="number" class="form-control" id="employee-salary">
+            </div>
+            <div class="mb-1">Loại Nhân Viên:</div>
+            <label class="radio-inline active mr-2"><input type="radio" name="employeeType" value="1">Trùm</label>
+            <label class="radio-inline mr-2"><input type="radio" name="employeeType" value="2">Thủ Lĩnh</label>
+            <label class="radio-inline"><input type="radio" name="employeeType" value="3">Cu li</label>
+            <br>
+            <button type="button" class="btn btn-success" id="add-employee">Thêm Nhân Viên</button>
+            <br><br>
+            <button type="button" class="btn btn-success" id="export-employee">Xuất Thông Tin NV</button>
+        </form>
+        <br>
+        <h2>Danh sách Nhân Viên:</h2>
+        <table class="table table-bordered">
+                <thead class="text-center">
+                        <tr>
+                          <th>Mã Nhân Viên</th>
+                          <th>Họ Tên</th>
+                          <th>Lương</th>
+                          <th>Loại Nhân Viên</th>
+                        </tr>
+                      </thead>
+                      <tbody id="tbody">
+                        <!-- <tr>
+                          <td>John</td>
+                          <td>Doe</td>
+                          <td>john@example.com</td>
+                        </tr>
+                        <tr>
+                          <td>Mary</td>
+                          <td>Moe</td>
+                          <td>mary@example.com</td>
+                        </tr>
+                        <tr>
+                          <td>July</td>
+                          <td>Dooley</td>
+                          <td>july@example.com</td>
+                        </tr> -->
+                      </tbody>
+        </table>
+    </div>
+
+	<!-- ================================================================ -->
+	
+	<!-- Javascript part -->
+	
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!-- jQuery UI -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+	<!-- Popper -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+
+	<!-- Latest compiled Bootstrap JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+
+    <!-- Js files -->
+    <script src="Employee.js"></script>
+</body>
+</html>
